@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RJ Transport Solutions</title>
+    <style>
+        :root {
+            --primary-color: #004aad;
+            --secondary-color: #f4f4f4;
+            --text-color: #333;
+            --accent-color: #ffae00;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--secondary-color);
+        }
+
+        header {
+            background: var(--primary-color);
+            color: white;
+            padding: 20px 40px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        .header-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+        }
+        .logo-container img {
+            max-height: 100px;
+            width: auto;
+            border-radius: 15px;
+        }
+
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: var(--accent-color);
+        }
+
+        section {
+            padding: 60px 20px;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        .intro {
+            text-align: center;
+            padding: 80px 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .intro h2 {
+            color: var(--primary-color);
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .intro p {
+            font-size: 1.1em;
+        }
+
+        .services, .why-us, .vehicles {
+            background: white;
+            margin-top: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .services h2, .why-us h2, .vehicles h2 {
+            color: var(--primary-color);
+            margin-bottom: 20px;
+        }
+
+        .list, .vehicle-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .list-item, .vehicle-card {
+            background: var(--secondary-color);
+            padding: 15px;
+            border-radius: 6px;
+            text-align: center;
+            font-weight: 500;
+        }
+
+        .vehicle-card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 6px;
+            margin-bottom: 10px;
+        }
+
+        .vehicle-card h3 {
+            margin: 10px 0;
+            color: var(--primary-color);
+            font-size: 1.2em;
+        }
+        .contact {
+            background: white;
+            margin-top: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .contact h2 {
+            color: var(--primary-color);
+            margin-bottom: 20px;
+        }
+
+        .contact-info p {
+            font-size: 1.1em;
+            margin: 10px 0;
+        }
+
+        .contact-info strong {
+            color: var(--accent-color);
+        }
+
+        footer {
+            background: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 50px;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 1.8em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo-container">
+        <img src="/images/RJ-logo.jpg" alt="RJ Transport Solutions Logo" />
+    </div>
+
+    <h1>RJ Transport Solutions</h1>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#vehicles">Vehicles</a>
+        <a href="#why-us">Why Us</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="intro" id="about">
+    <h2>Reliable. Professional. Efficient.</h2>
+    <p>RJ Transport Solutions is your trusted partner in transporting goods, managing furniture removals, and handling office relocations. We take pride in our commitment to timely deliveries and safe handling, ensuring a smooth moving experience for every client.</p>
+
+</section>
+
+<section class="services" id="services">
+    <h2>Our Services</h2>
+    <div class="list">
+        <div class="list-item">Furniture Removals</div>
+        <div class="list-item">Office Relocation</div>
+        <div class="list-item">Packing & Wrapping</div>
+        <div class="list-item">Equipment Transport</div>
+        <div class="list-item">Local & Long Distance</div>
+        <div class="list-item">Custom Solutions</div>
+    </div>
+</section>
+
+<section class="vehicles" id="vehicles">
+    <h2>Vehicles Available for Hire</h2>
+    <div class="vehicle-list">
+        <div class="vehicle-card">
+            <img src="/images/3TonTruck.png" alt="3-Ton Truck">
+            <h3>3-Ton Truck</h3>
+            <p>Perfect for small moves and light equipment transport. Capacity: 3 tons.</p>
+        </div>
+        <div class="vehicle-card">
+            <img src="/images/8TonTruck.png" alt="8-Ton Truck">
+            <h3>8-Ton Truck</h3>
+            <p>Ideal for office relocations and larger loads. Capacity: 8 tons.</p>
+        </div>
+        <div class="vehicle-card">
+            <img src="/images/van.png" alt="Delivery Van">
+            <h3>Delivery Van</h3>
+            <p>Great for small parcels, furniture, and express delivery needs.</p>
+        </div>
+        <!-- Add more vehicles as needed -->
+    </div>
+</section>
+
+<section class="why-us" id="why-us">
+    <h2>Why Choose Us?</h2>
+    <div class="list">
+        <div class="list-item">Reliable Fleet: Well-maintained vehicles for safe transit</div>
+        <div class="list-item">Experienced Team: Trained professionals dedicated to excellence</div>
+        <div class="list-item">24/7 Support: Always available to assist you</div>
+        <div class="list-item">Flexible Solutions: Tailored services for your unique needs</div>
+    </div>
+</section>
+<section class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <div class="contact-info">
+        <a href="'https://wa.me/27638885279'" target="_blank">
+            <strong>WhatsApp</strong></a>
+        <p><strong>Phone:</strong> +27 63 888 5279</p>
+        <p><strong>Email:</strong> maparuradonald@gmail.com</p>
+        <p><strong>Address:</strong> 3 Burnham Henley on Klip, Meyerton, South Africa</p>
+        <p><strong>Operating Hours:</strong> Mon - Sat, 8:00am - 6:00pm</p>
+          </div>
+</section>
+
+<footer>
+    &copy; 2025 RJ Transport Solutions. All rights reserved.
+</footer>
+
+</body>
+</html>
